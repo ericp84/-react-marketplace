@@ -1,38 +1,83 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.form-inline{
+  display: flex;
+  justify-content: center;
+  background-color: "transparent";
+  border-radius: 25px;
+}
+
+.redirect{
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.acc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 75vh;
+  width: 100%;
+  background-color:'transparent';
+  opacity: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bann {
+  /* box-shadow: 10px 10px 10px grey; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 80px;
+  width: 100%;
+  color: rgb(59, 58, 57);
+  font-size: 45px;
+  font-family: 'Praise', cursive;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.logo-banner {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  border-radius: 50px;
+  background:'transparent';
+  backdrop-filter: blur(5px);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Praise', cursive;
+  font-size: 6.5rem;
+  border-radius: 25px;
+  color: rgb(54, 51, 51);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width: 1200px)  {
+  .logo-banner {
+    font-size: calc(1.52rem + 3.3vw);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media(max-width: 448px)   {
+  .btn-connex {
+    margin-top: 21px;
+  }
+}
+
+@media(max-width: 1200px)  {
+  Label {
+    font-size: calc(1.52rem + 3.3vw);
   }
 }
